@@ -10,10 +10,10 @@ The program supports any number of players, and will condense players with the s
 
 -----
 
-Right now it only allows one match at a time. So if you're making a schedule for a larger number of matches and want to avoid conflicts you need to adjust the average time yourself, using the given average and deviation as a guideline. Eventually I would like to have it find non-conflicting or minimally conflicting times automatically.
+Right now it only allows getting one match at a time. So if you're making a schedule for a larger number of matches and want to avoid conflicts you need to adjust the average time yourself, using the given average and deviation as a guideline. Eventually I would like to have it find non-conflicting or minimally conflicting times automatically.
 
-Setting times from multiple matches at a time is currently in the works.
+Multiple matches can be set at a time. Create a file where each line matches the format of the `set` command, one match per line.
 
 -----
 
-The json files available in the `times` folder are examples which I'll update every once in a while as I add more matches myself. They aren't required to be used, and if left out they will be created as needed by the program. They're there mostly to show the format used and to provide some manner of starting point if you don't have the desire or patience to build them up over time yourself
+The json files available in the `times` folder are examples which I'll update every once in a while as I add more matches myself. They aren't required to be used, and if left out they will be created as needed by the program. They're here mostly to show the format used and to provide some manner of starting point if you don't have the desire or patience to build them up over time yourself
