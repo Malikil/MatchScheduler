@@ -127,7 +127,11 @@ const funcs = {
             input: fs.createReadStream(args[0])
         });
         infile.on("line", line => {
-            let lineargs = line.split(' ');
+            let lineargs = [];
+            line.split(' ').forEach(t => {
+                if (!!t && !lineargs.includes(t))
+                    lineargs.push(t);
+            });
             let times = lineargs.slice(0, -1).sort((a, b) => a - b);
             let time = parseFloat(lineargs.slice(-1));
             if (!validateTimes(times))
